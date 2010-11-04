@@ -1,0 +1,33 @@
+Just a todoist backend which is written in Python.
+
+Author  : Volkan Esgel
+Licence : GPLv3
+
+Usage   :
+
+- Open an interactive Python shell and enter the following commands respectively.
+
+from todoistbackend import Iface
+ti = Iface()
+session = ti.login("email", "password")
+session
+
+Then, you will see the details of your user account if your login is successful.
+Otherwise, you will see a "LOGIN_ERROR" message.
+
+After this step, you can use the methods which is placed in the backend module to interact
+with your online todoist account.
+
+For example, if your login is successful and you want to list all of your projects, just
+use the following command:
+
+ti.getProjects(session['api_token'])
+
+
+NOTE :
+
+This is an experimental project for now and may not work properly yet.
+For any recommendation, you can contact me using the following e-mail
+address:
+
+vesgel [at] gmail.com
